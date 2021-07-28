@@ -1,0 +1,23 @@
+# WaterVortex is the Vortex client wrapper for the Nukkit server
+# Developer by Alemiz
+
+# Port on which is Vortex service running
+vortexPort: 47007
+# Address of the Vortex server
+vortexAddress: "127.0.0.1"
+# Password used during the authentication phase
+vortexPassword: "123456789"
+# Compression method used when sending packets from this node to server
+# Avaliable methods: NO_COMPRESS, ZSTANDARD
+vortexCompression: "ZSTANDARD"
+# Compression level used if compression is enabled
+vortexCompressionLevel: 1
+# Identifier of the client used by Vortex server
+clientIdentifier: "nukkitwortex-client1"
+# Type of the Vortex node. Avaliable implementations: vortex-node, vortex-master, minecraft, minecraft-master
+# Im Minecraft network "minecraft" type should be used for the downstream servers
+vortexType: "minecraft"
+# List of the master nodes this node will be assigned to. Leave empty if this node is master node
+masterNodes: []
+# Preffered master node. Leave empty if no master nodes are configures
+primaryMasterNode: ""

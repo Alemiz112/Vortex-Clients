@@ -1,0 +1,6 @@
+name: NukkitVortex
+version: "1.0.0"
+api: ["1.0.0"]
+author: Alemiz
+website: https://github.com/Alemiz112
+main: alemiz.stargate.vortex.nukkit.NukkitVortex
