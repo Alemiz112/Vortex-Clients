@@ -37,6 +37,7 @@ pipeline {
     }
     post {
         always {
+            archiveArtifacts artifacts: 'waterdogpe/target/vortex-waterdogpe-1.0-SNAPSHOT.jar,nukkit/target/vortex-nukkit-1.0-SNAPSHOT.jar', onlyIfSuccessful: true
             deleteDir()
         }
     }
