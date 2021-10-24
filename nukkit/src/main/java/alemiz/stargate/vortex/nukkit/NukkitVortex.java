@@ -58,6 +58,7 @@ public class NukkitVortex extends PluginBase implements VortexListener {
     }
 
     private VortexClientSettings createSettings() {
+        this.saveDefaultConfig();
         Config config = this.getConfig();
         InetSocketAddress address = new InetSocketAddress(config.getString("vortexAddress"), config.getInt("vortexPort"));
         CompressionEnum compression = CompressionEnum.valueOf(config.getString("vortexCompression").toUpperCase());
