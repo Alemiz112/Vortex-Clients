@@ -72,6 +72,7 @@ public class NukkitVortex extends PluginBase implements VortexListener {
         settings.setClientName(config.getString("clientIdentifier"));
         settings.setVortexType(config.getString("vortexType"));
         settings.setMasterNodes(config.getStringList("masterNodes"));
+        settings.setSubscribedTopics(config.getStringList("topics"));
         settings.setPrimaryMasterNode(config.getString("primaryMasterNode"));
         settings.setProtocolversion(STARGATE_PROTOCOL);
         return settings;

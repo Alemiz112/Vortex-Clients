@@ -21,3 +21,5 @@ vortexType: "minecraft"
 masterNodes: []
 # Preffered master node. Leave empty if no master nodes are configures
 primaryMasterNode: ""
+# List of message topics this node will be subscribed to
+topics: []
