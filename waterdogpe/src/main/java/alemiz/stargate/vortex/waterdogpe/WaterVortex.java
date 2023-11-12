@@ -82,7 +82,7 @@ public class WaterVortex extends Plugin implements VortexListener {
 
     @Override
     public void onNodeCreated(InetSocketAddress address, VortexNode node) {
-        node.setVortexPacketListener(new PacketListener(this, node));
+        node.addVortexPacketListener(new PacketListener(this, node));
         for (VortexListener listener : this.pluginListeners) {
             listener.onNodeCreated(address, node);
         }
